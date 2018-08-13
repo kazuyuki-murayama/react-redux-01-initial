@@ -7,11 +7,11 @@ const initialState = { currentCount : 1 };
 // また、action.typeには、"@@redux/INITl.3.o.v.o.o"といったランダムな文字列が渡されます。
 export default function reducer (state = initialState, action) {
     switch (action.type) {
-        case COUNT_UP:
-            return Object.assign({}, { currentCount: state.currentCount + 1 });
-        case COUNT_DOWN:
-            return Object.assign({}, { currentCount: state.currentCount - 1 });
-        default:
+        case COUNT_UP :
+            return Object.assign({}, { currentCount : state.currentCount + 1 });
+        case COUNT_DOWN :
+            return Object.assign({}, { currentCount : state.currentCount - 1 });
+        default :
             return state;
     }
 }
