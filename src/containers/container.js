@@ -1,10 +1,9 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { createCountUpAction, createCountDownAction } from '../actions/countActionCreators';
 import CountComponent from '../components/component';
 
-function mapStateToProps(state) {
-    return { state };
+function mapStateToProps({ count }) {
+    return { count };
 }
 function mapDispatchToProps(dispatch) {
     return {

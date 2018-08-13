@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class CountComponent extends React.Component {
     render() {
-        const { count } = this.props.state;
+        const { count } = this.props;
         return (
             <div>
                 <span>count:{ count }</span>
