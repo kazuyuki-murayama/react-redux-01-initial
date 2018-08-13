@@ -7,9 +7,9 @@ export default class CountComponent extends React.Component {
             <div>
                 <span>count:{ count }</span>
                 <br/>
-                <button onClick={ () => {this.props.createCountUpAction(count)}}>up</button>
+                <button onClick={ () => {this.props.countUp(count)}}>up</button>
                 <br/>
-                <button onClick={ () => {this.props.createCountDownAction(count)}}>down</button>
+                <button onClick={ () => {this.props.countDown(count)}}>down</button>
             </div>
         );
     }

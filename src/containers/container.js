@@ -8,10 +8,10 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch) {
     return {
-        createCountUpAction(count) {
+        countUp(count) {
             dispatch(createCountUpAction(count));
         },
-        createCountDownAction(count) {
+        countDown(count) {
             dispatch(createCountDownAction(count));
         }
     };
