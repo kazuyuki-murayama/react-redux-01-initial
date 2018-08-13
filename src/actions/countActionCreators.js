@@ -1,11 +1,11 @@
 export const COUNT_UP = 'UP';
-export const createCountUpAction = (count)  => ({
+export const createCountUpAction = (currentCount)  => ({
         type :COUNT_UP,
-        payload : { count }
+        payload : { currentCount }
 });
 
 export const COUNT_DOWN = 'DOWN';
-export const createCountDownAction = (count)  => ({
+export const createCountDownAction = (currentCount)  => ({
     type :COUNT_DOWN,
-    payload : { count }
+    payload : { currentCount }
 });

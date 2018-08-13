@@ -2,16 +2,16 @@ import { connect } from 'react-redux';
 import { createCountUpAction, createCountDownAction } from '../actions/countActionCreators';
 import CountComponent from '../components/component';
 
-function mapStateToProps({ count }) {
-    return { count };
+function mapStateToProps({ currentCount }) {
+    return { currentCount };
 }
 function mapDispatchToProps(dispatch) {
     return {
-        countUp(count) {
-            dispatch(createCountUpAction(count));
+        countUp(currentCount) {
+            dispatch(createCountUpAction(currentCount));
         },
-        countDown(count) {
-            dispatch(createCountDownAction(count));
+        countDown(currentCount) {
+            dispatch(createCountDownAction(currentCount));
         }
     };
 }
